@@ -1,0 +1,542 @@
+[	
+    {
+        "chat": "USER: Adana'da hava durumu nasıl?\n\nASSISTANT: <functioncall> {\"name\": \"hava_durumu_sorgula\", \"arguments\": '{\"sehir\": \"Adana\"'}\n\nFUNCTION RESPONSE: {\"sicaklik\":\"18°C\", \"durum\": \"Güneşli\"}\n\nASSISTANT: Adana'da şu anda hava 18°C ve güneşli.",
+        "system": "SYSTEM: Aşağıdaki fonksiyonlara erişimin var, gerektiğinde kullanabilirsin.\n{\n \"name\":\"hava_durumu_sorgula\",\n \"description\": \"Verilen şehir için güncel hava durumunu sorgular\",\n \"parameters\": {\n \"type\":\"object\",\n \"properties\": {\n \"sehir\": {\n\"type\": \"string\",\n \"description\": \"Şehir adı\"\n}\n},\n \"required\": [\"sehir\"]\n }\n}\n",
+        "__hfsplit__": "train",
+        "conversations": [
+            {
+                "from": "system",
+                "value": "Aşağıdaki fonksiyonlara erişimin var, gerektiğinde kullanabilirsin.\n{\n \"name\":\"hava_durumu_sorgula\",\n \"description\": \"Verilen şehir için güncel hava durumunu sorgular\",\n \"parameters\": {\n \"type\":\"object\",\n \"properties\": {\n \"sehir\": {\n\"type\": \"string\",\n \"description\": \"Şehir adı\"\n}\n},\n \"required\": [\"sehir\"]\n }\n}\n"
+            },
+            {
+                "from": "human",
+                "value": "Adana'da hava durumu nasıl?"
+            },
+            {
+                "from": "gpt",
+                "value": "<functioncall> {\"name\":\"hava_durumu_sorgula\", \"arguments\": '{\"sehir\":\"Adana\"}'}"
+            },
+            {
+                "from": "tool",
+                "value": "{\"sicaklik\": \"18°C\", \"durum\":\"Güneşli\"}"
+            },
+            {
+                "from": "gpt",
+                "value": "Adana'da şu anda hava 18°C ve güneşli."
+            }
+        ]
+    },
+    {
+        "chat": "USER: Adıyaman'da şu an hava nasıl?\n\nASSISTANT:<functioncall> {\"name\": \"hava_durumu_sorgula\", \"arguments\":'{\"sehir\": \"Adıyaman\"}'}\n\nFUNCTION RESPONSE: {\"sicaklik\":\"12°C\", \"durum\": \"Bulutlu\"}\n\nASSISTANT: Adıyaman'da şu anda hava 12°C ve bulutlu.\n",
+        "system": "SYSTEM: Aşağıdaki fonksiyonlara erişimin var, gerektiğinde kullanabilirsin.\n{\n \"name\":\"hava_durumu_sorgula\",\n \"description\": \"Verilen şehir için güncel hava durumunu sorgular\",\n \"parameters\": {\n \"type\":\"object\",\n \"properties\": {\n \"sehir\": {\n\"type\": \"string\",\n \"description\": \"Şehir adı\"\n}\n },\n \"required\": [\"sehir\"]\n }\n}\n",
+        "__hfsplit__": "train",
+        "conversations": [
+            {
+                "from": "system",
+                "value": "Aşağıdaki fonksiyonlara erişimin var, gerektiğinde kullanabilirsin.\n{\n \"name\":\"hava_durumu_sorgula\",\n \"description\": \"Verilen şehir için güncel hava durumunu sorgular\",\n \"parameters\": {\n \"type\":\"object\",\n \"properties\": {\n \"sehir\": {\n\"type\": \"string\",\n \"description\": \"Şehir adı\"\n}\n },\n \"required\": [\"sehir\"]\n }\n}\n"
+            },
+            {
+                "from": "human",
+                "value": "Adıyaman'da şu an hava nasıl?"
+            },
+            {
+                "from": "gpt",
+                "value": "<functioncall> {\"name\":\"hava_durumu_sorgula\", \"arguments\": '{\"sehir\": \"Adıyaman\"}'}"
+            },
+            {
+                "from": "tool",
+                "value": "{\"sicaklik\": \"12°C\", \"durum\":\"Bulutlu\"}"
+            },
+            {
+                "from": "gpt",
+                "value": "Adıyaman'da şu anda hava 12°C ve bulutlu."
+            }
+        ]
+    },
+    {
+        "chat": "USER: Afyon'da hava durumu nasıl?\n\nASSISTANT:<functioncall> {\"name\": \"hava_durumu_sorgula\", \"arguments\":'{\"sehir\": \"Afyon\"}'}\n\nFUNCTION RESPONSE: {\"sicaklik\":\"22°C\", \"durum\": \"Yağmurlu\"}\n\nASSISTANT: Afyon'de şu anda hava 22°C ve yağmurlu.\n",
+        "system": "SYSTEM: Aşağıdaki fonksiyonlara erişimin var, gerektiğinde kullanabilirsin.\n{\n \"name\":\"hava_durumu_sorgula\",\n \"description\": \"Verilen şehir için güncel hava durumunu sorgular\",\n \"parameters\": {\n \"type\":\"object\",\n \"properties\": {\n \"sehir\": {\n\"type\": \"string\",\n \"description\": \"Şehir adı\"\n}\n },\n \"required\": [\"sehir\"]\n }\n}\n",
+        "__hfsplit__": "train",
+        "conversations": [
+            {
+                "from": "system",
+                "value": "Aşağıdaki fonksiyonlara erişimin var, gerektiğinde kullanabilirsin.\n{\n \"name\":\"hava_durumu_sorgula\",\n \"description\": \"Verilen şehir için güncel hava durumunu sorgular\",\n \"parameters\": {\n \"type\":\"object\",\n \"properties\": {\n \"sehir\": {\n\"type\": \"string\",\n \"description\": \"Şehir adı\"\n}\n },\n \"required\": [\"sehir\"]\n }\n}\n"
+            },
+            {
+                "from": "human",
+                "value": "Afyon'da hava durumu nasıl?"
+            },
+            {
+                "from": "gpt",
+                "value": "<functioncall> {\"name\":\"hava_durumu_sorgula\", \"arguments\": '{\"sehir\": \"Afyon\"}'}"
+            },
+            {
+                "from": "tool",
+                "value": "{\"sicaklik\": \"22°C\", \"durum\":\"Yağmurlu\"}"
+            },
+            {
+                "from": "gpt",
+                "value": "Afyon'da şu anda hava 22°C ve yağmurlu."
+            }
+        ]
+    },
+    {
+        "chat": "USER: Ağrı'da hava\n\nASSISTANT: <functioncall> {\"name\": \"hava_durumu_sorgula\", \"arguments\": '{\"sehir\": \"Ağrı\"'}\n\nFUNCTION RESPONSE: {\"sicaklik\":\"-4°C\", \"durum\": \"Karlı\"}\n\nASSISTANT: Ağrı'da şu anda hava -4°C ve karlı. Kalın giyinin.",
+        "system": "SYSTEM: Aşağıdaki fonksiyonlara erişimin var, gerektiğinde kullanabilirsin.\n{\n \"name\":\"hava_durumu_sorgula\",\n \"description\": \"Verilen şehir için güncel hava durumunu sorgular\",\n \"parameters\": {\n \"type\":\"object\",\n \"properties\": {\n \"sehir\": {\n\"type\": \"string\",\n \"description\": \"Şehir adı\"\n}\n},\n \"required\": [\"sehir\"]\n }\n}\n",
+        "__hfsplit__": "train",
+        "conversations": [
+            {
+                "from": "system",
+                "value": "Aşağıdaki fonksiyonlara erişimin var, gerektiğinde kullanabilirsin.\n{\n \"name\":\"hava_durumu_sorgula\",\n \"description\": \"Verilen şehir için güncel hava durumunu sorgular\",\n \"parameters\": {\n \"type\":\"object\",\n \"properties\": {\n \"sehir\": {\n\"type\": \"string\",\n \"description\": \"Şehir adı\"\n}\n},\n \"required\": [\"sehir\"]\n }\n}\n"
+            },
+            {
+                "from": "human",
+                "value": "Ağrı'da hava"
+            },
+            {
+                "from": "gpt",
+                "value": "<functioncall> {\"name\":\"hava_durumu_sorgula\", \"arguments\": '{\"sehir\":\"Ağrı\"}'}"
+            },
+            {
+                "from": "tool",
+                "value": "{\"sicaklik\": \"-4°C\", \"durum\":\"Karlı\"}"
+            },
+            {
+                "from": "gpt",
+                "value": "Ağrı'da şu anda hava -4°C ve karlı. Kalın giyinin."
+            }
+        ]
+    },
+    {
+        "chat": "USER: Amasya'da hava durumu nasıl?\n\nASSISTANT: <functioncall> {\"name\": \"hava_durumu_sorgula\", \"arguments\": '{\"sehir\": \"Amasya\"'}\n\nFUNCTION RESPONSE: {\"sicaklik\":\"14°C\", \"durum\": \"Parçalı Bulutlu\"}\n\nASSISTANT: Amasya'da şu anda hava 14°C ve parçalı bulutlu.",
+        "system": "SYSTEM: Aşağıdaki fonksiyonlara erişimin var, gerektiğinde kullanabilirsin.\n{\n \"name\":\"hava_durumu_sorgula\",\n \"description\": \"Verilen şehir için güncel hava durumunu sorgular\",\n \"parameters\": {\n \"type\":\"object\",\n \"properties\": {\n \"sehir\": {\n\"type\": \"string\",\n \"description\": \"Şehir adı\"\n}\n},\n \"required\": [\"sehir\"]\n }\n}\n",
+        "__hfsplit__": "train",
+        "conversations": [
+            {
+                "from": "system",
+                "value": "Aşağıdaki fonksiyonlara erişimin var, gerektiğinde kullanabilirsin.\n{\n \"name\":\"hava_durumu_sorgula\",\n \"description\": \"Verilen şehir için güncel hava durumunu sorgular\",\n \"parameters\": {\n \"type\":\"object\",\n \"properties\": {\n \"sehir\": {\n\"type\": \"string\",\n \"description\": \"Şehir adı\"\n}\n},\n \"required\": [\"sehir\"]\n }\n}\n"
+            },
+            {
+                "from": "human",
+                "value": "Amasya'da hava durumu nasıl?"
+            },
+            {
+                "from": "gpt",
+                "value": "<functioncall> {\"name\":\"hava_durumu_sorgula\", \"arguments\": '{\"sehir\":\"Amasya\"}'}"
+            },
+            {
+                "from": "tool",
+                "value": "{\"sicaklik\": \"14°C\", \"durum\":\"Parçalı Bulutlu\"}"
+            },
+            {
+                "from": "gpt",
+                "value": "Amasya'da şu anda hava 14°C ve parçalı bulutlu."
+            }
+        ]
+    },
+    {
+        "chat": "USER: Ankara'da hava kaç derece?\n\nASSISTANT: <functioncall> {\"name\": \"hava_durumu_sorgula\", \"arguments\": '{\"sehir\": \"Ankara\"'}\n\nFUNCTION RESPONSE: {\"sicaklik\":\"11°C\", \"durum\": \"Sisli\"}\n\nASSISTANT: Ankara'da şu anda hava 11°C ve sisli.",
+        "system": "SYSTEM: Aşağıdaki fonksiyonlara erişimin var, gerektiğinde kullanabilirsin.\n{\n \"name\":\"hava_durumu_sorgula\",\n \"description\": \"Verilen şehir için güncel hava durumunu sorgular\",\n \"parameters\": {\n \"type\":\"object\",\n \"properties\": {\n \"sehir\": {\n\"type\": \"string\",\n \"description\": \"Şehir adı\"\n}\n},\n \"required\": [\"sehir\"]\n }\n}\n",
+        "__hfsplit__": "train",
+        "conversations": [
+            {
+                "from": "system",
+                "value": "Aşağıdaki fonksiyonlara erişimin var, gerektiğinde kullanabilirsin.\n{\n \"name\":\"hava_durumu_sorgula\",\n \"description\": \"Verilen şehir için güncel hava durumunu sorgular\",\n \"parameters\": {\n \"type\":\"object\",\n \"properties\": {\n \"sehir\": {\n\"type\": \"string\",\n \"description\": \"Şehir adı\"\n}\n},\n \"required\": [\"sehir\"]\n }\n}\n"
+            },
+            {
+                "from": "human",
+                "value": "Ankara'da hava kaç derece?"
+            },
+            {
+                "from": "gpt",
+                "value": "<functioncall> {\"name\":\"hava_durumu_sorgula\", \"arguments\": '{\"sehir\":\"Ankara\"}'}"
+            },
+            {
+                "from": "tool",
+                "value": "{\"sicaklik\": \"11°C\", \"durum\":\"Sisli\"}"
+            },
+            {
+                "from": "gpt",
+                "value": "Ankara'da şu anda hava 11°C ve sisli."
+            }
+        ]
+    },
+    {
+        "chat": "USER: Antalya sıcak mı?\n\nASSISTANT: <functioncall> {\"name\": \"hava_durumu_sorgula\", \"arguments\": '{\"sehir\": \"Antalya\"'}\n\nFUNCTION RESPONSE: {\"sicaklik\":\"27°C\", \"durum\": \"Güneşli\"}\n\nASSISTANT: Antalya'da şu anda hava 27°C ve güneşli.",
+        "system": "SYSTEM: Aşağıdaki fonksiyonlara erişimin var, gerektiğinde kullanabilirsin.\n{\n \"name\":\"hava_durumu_sorgula\",\n \"description\": \"Verilen şehir için güncel hava durumunu sorgular\",\n \"parameters\": {\n \"type\":\"object\",\n \"properties\": {\n \"sehir\": {\n\"type\": \"string\",\n \"description\": \"Şehir adı\"\n}\n},\n \"required\": [\"sehir\"]\n }\n}\n",
+        "__hfsplit__": "train",
+        "conversations": [
+            {
+                "from": "system",
+                "value": "Aşağıdaki fonksiyonlara erişimin var, gerektiğinde kullanabilirsin.\n{\n \"name\":\"hava_durumu_sorgula\",\n \"description\": \"Verilen şehir için güncel hava durumunu sorgular\",\n \"parameters\": {\n \"type\":\"object\",\n \"properties\": {\n \"sehir\": {\n\"type\": \"string\",\n \"description\": \"Şehir adı\"\n}\n},\n \"required\": [\"sehir\"]\n }\n}\n"
+            },
+            {
+                "from": "human",
+                "value": "Antalya sıcak mı?"
+            },
+            {
+                "from": "gpt",
+                "value": "<functioncall> {\"name\":\"hava_durumu_sorgula\", \"arguments\": '{\"sehir\":\"Antalya\"}'}"
+            },
+            {
+                "from": "tool",
+                "value": "{\"sicaklik\": \"27°C\", \"durum\":\"Güneşli\"}"
+            },
+            {
+                "from": "gpt",
+                "value": "Antalya'da şu anda hava 27°C ve güneşli."
+            }
+        ]
+    },
+    {
+        "chat": "USER: Artvin yağmurlu mu?\n\nASSISTANT: <functioncall> {\"name\": \"hava_durumu_sorgula\", \"arguments\": '{\"sehir\": \"Artvin\"'}\n\nFUNCTION RESPONSE: {\"sicaklik\":\"18°C\", \"durum\": \"Yağmurlu\"}\n\nASSISTANT: Artvin'de şu anda hava 18°C ve yağmurlu.",
+        "system": "SYSTEM: Aşağıdaki fonksiyonlara erişimin var, gerektiğinde kullanabilirsin.\n{\n \"name\":\"hava_durumu_sorgula\",\n \"description\": \"Verilen şehir için güncel hava durumunu sorgular\",\n \"parameters\": {\n \"type\":\"object\",\n \"properties\": {\n \"sehir\": {\n\"type\": \"string\",\n \"description\": \"Şehir adı\"\n}\n},\n \"required\": [\"sehir\"]\n }\n}\n",
+        "__hfsplit__": "train",
+        "conversations": [
+            {
+                "from": "system",
+                "value": "Aşağıdaki fonksiyonlara erişimin var, gerektiğinde kullanabilirsin.\n{\n \"name\":\"hava_durumu_sorgula\",\n \"description\": \"Verilen şehir için güncel hava durumunu sorgular\",\n \"parameters\": {\n \"type\":\"object\",\n \"properties\": {\n \"sehir\": {\n\"type\": \"string\",\n \"description\": \"Şehir adı\"\n}\n},\n \"required\": [\"sehir\"]\n }\n}\n"
+            },
+            {
+                "from": "human",
+                "value": "Artvin yağmurlu mu?"
+            },
+            {
+                "from": "gpt",
+                "value": "<functioncall> {\"name\":\"hava_durumu_sorgula\", \"arguments\": '{\"sehir\":\"Artvin\"}'}"
+            },
+            {
+                "from": "tool",
+                "value": "{\"sicaklik\": \"18°C\", \"durum\":\"Yağmurlu\"}"
+            },
+            {
+                "from": "gpt",
+                "value": "Artvin'de şu anda hava 18°C ve yağmurlu."
+            }
+        ]
+    },
+    {
+        "chat": "USER: Aydın bugün güneşli mi?\n\nASSISTANT: <functioncall> {\"name\": \"hava_durumu_sorgula\", \"arguments\": '{\"sehir\": \"Aydın\"'}\n\nFUNCTION RESPONSE: {\"sicaklik\":\"24°C\", \"durum\": \"Güneşli\"}\n\nASSISTANT: Aydın'da şu anda hava 24°C ve güneşli.",
+        "system": "SYSTEM: Aşağıdaki fonksiyonlara erişimin var, gerektiğinde kullanabilirsin.\n{\n \"name\":\"hava_durumu_sorgula\",\n \"description\": \"Verilen şehir için güncel hava durumunu sorgular\",\n \"parameters\": {\n \"type\":\"object\",\n \"properties\": {\n \"sehir\": {\n\"type\": \"string\",\n \"description\": \"Şehir adı\"\n}\n},\n \"required\": [\"sehir\"]\n }\n}\n",
+        "__hfsplit__": "train",
+        "conversations": [
+            {
+                "from": "system",
+                "value": "Aşağıdaki fonksiyonlara erişimin var, gerektiğinde kullanabilirsin.\n{\n \"name\":\"hava_durumu_sorgula\",\n \"description\": \"Verilen şehir için güncel hava durumunu sorgular\",\n \"parameters\": {\n \"type\":\"object\",\n \"properties\": {\n \"sehir\": {\n\"type\": \"string\",\n \"description\": \"Şehir adı\"\n}\n},\n \"required\": [\"sehir\"]\n }\n}\n"
+            },
+            {
+                "from": "human",
+                "value": "Aydın bugün güneşli mi?"
+            },
+            {
+                "from": "gpt",
+                "value": "<functioncall> {\"name\":\"hava_durumu_sorgula\", \"arguments\": '{\"sehir\":\"Aydın\"}'}"
+            },
+            {
+                "from": "tool",
+                "value": "{\"sicaklik\": \"24°C\", \"durum\":\"Güneşli\"}"
+            },
+            {
+                "from": "gpt",
+                "value": "Aydın'da şu anda hava 18°C ve güneşli."
+            }
+        ]
+    },
+    {
+        "chat": "USER: Balıkesir'de hava bugün güzel mi?\n\nASSISTANT: <functioncall> {\"name\": \"hava_durumu_sorgula\", \"arguments\": '{\"sehir\": \"Balıkesir\"'}\n\nFUNCTION RESPONSE: {\"sicaklik\":\"18°C\", \"durum\": \"Güneşli\"}\n\nASSISTANT: Balıkesir'de şu anda hava 18°C ve güneşli.",
+        "system": "SYSTEM: Aşağıdaki fonksiyonlara erişimin var, gerektiğinde kullanabilirsin.\n{\n \"name\":\"hava_durumu_sorgula\",\n \"description\": \"Verilen şehir için güncel hava durumunu sorgular\",\n \"parameters\": {\n \"type\":\"object\",\n \"properties\": {\n \"sehir\": {\n\"type\": \"string\",\n \"description\": \"Şehir adı\"\n}\n},\n \"required\": [\"sehir\"]\n }\n}\n",
+        "__hfsplit__": "train",
+        "conversations": [
+            {
+                "from": "system",
+                "value": "Aşağıdaki fonksiyonlara erişimin var, gerektiğinde kullanabilirsin.\n{\n \"name\":\"hava_durumu_sorgula\",\n \"description\": \"Verilen şehir için güncel hava durumunu sorgular\",\n \"parameters\": {\n \"type\":\"object\",\n \"properties\": {\n \"sehir\": {\n\"type\": \"string\",\n \"description\": \"Şehir adı\"\n}\n},\n \"required\": [\"sehir\"]\n }\n}\n"
+            },
+            {
+                "from": "human",
+                "value": "Balıkesir'de hava bugün güzel mi?"
+            },
+            {
+                "from": "gpt",
+                "value": "<functioncall> {\"name\":\"hava_durumu_sorgula\", \"arguments\": '{\"sehir\":\"Balıkesir\"}'}"
+            },
+            {
+                "from": "tool",
+                "value": "{\"sicaklik\": \"18°C\", \"durum\":\"Güneşli\"}"
+            },
+            {
+                "from": "gpt",
+                "value": "Balıkesir'de şu anda hava 18°C ve güneşli."
+            }
+        ]
+    },
+    {
+        "chat": "USER: Bilecik'te hava nasıl?\n\nASSISTANT: <functioncall> {\"name\": \"hava_durumu_sorgula\", \"arguments\": '{\"sehir\": \"Bilecik\"'}\n\nFUNCTION RESPONSE: {\"sicaklik\":\"19°C\", \"durum\": \"Yağmurlu\"}\n\nASSISTANT: Bilecik'te hava 19°C ve yağmurlu. Dışarı çıkarken yanınıza şemsiye alın.",
+        "system": "SYSTEM: Aşağıdaki fonksiyonlara erişimin var, gerektiğinde kullanabilirsin.\n{\n \"name\":\"hava_durumu_sorgula\",\n \"description\": \"Verilen şehir için güncel hava durumunu sorgular\",\n \"parameters\": {\n \"type\":\"object\",\n \"properties\": {\n \"sehir\": {\n\"type\": \"string\",\n \"description\": \"Şehir adı\"\n}\n},\n \"required\": [\"sehir\"]\n }\n}\n",
+        "__hfsplit__": "train",
+        "conversations": [
+            {
+                "from": "system",
+                "value": "Aşağıdaki fonksiyonlara erişimin var, gerektiğinde kullanabilirsin.\n{\n \"name\":\"hava_durumu_sorgula\",\n \"description\": \"Verilen şehir için güncel hava durumunu sorgular\",\n \"parameters\": {\n \"type\":\"object\",\n \"properties\": {\n \"sehir\": {\n\"type\": \"string\",\n \"description\": \"Şehir adı\"\n}\n},\n \"required\": [\"sehir\"]\n }\n}\n"
+            },
+            {
+                "from": "human",
+                "value": "Bilecik'te hava nasıl?"
+            },
+            {
+                "from": "gpt",
+                "value": "<functioncall> {\"name\":\"hava_durumu_sorgula\", \"arguments\": '{\"sehir\":\"Bilecik\"}'}"
+            },
+            {
+                "from": "tool",
+                "value": "{\"sicaklik\": \"18°C\", \"durum\":\"Yağmurlu\"}"
+            },
+            {
+                "from": "gpt",
+                "value": "Bilecik'te hava 19°C ve yağmurlu. Dışarı çıkarken yanınıza şemsiye alın."
+            }
+        ]
+    },
+    {
+        "chat": "USER: Bingöl'de hava kaç derece?\n\nASSISTANT: <functioncall> {\"name\": \"hava_durumu_sorgula\", \"arguments\": '{\"sehir\": \"Bingöl\"'}\n\nFUNCTION RESPONSE: {\"sicaklik\":\"15°C\", \"durum\": \"Bulutlu\"}\n\nASSISTANT: Bingöl'de şu anda hava 15°C ve bulutlu.",
+        "system": "SYSTEM: Aşağıdaki fonksiyonlara erişimin var, gerektiğinde kullanabilirsin.\n{\n \"name\":\"hava_durumu_sorgula\",\n \"description\": \"Verilen şehir için güncel hava durumunu sorgular\",\n \"parameters\": {\n \"type\":\"object\",\n \"properties\": {\n \"sehir\": {\n\"type\": \"string\",\n \"description\": \"Şehir adı\"\n}\n},\n \"required\": [\"sehir\"]\n }\n}\n",
+        "__hfsplit__": "train",
+        "conversations": [
+            {
+                "from": "system",
+                "value": "Aşağıdaki fonksiyonlara erişimin var, gerektiğinde kullanabilirsin.\n{\n \"name\":\"hava_durumu_sorgula\",\n \"description\": \"Verilen şehir için güncel hava durumunu sorgular\",\n \"parameters\": {\n \"type\":\"object\",\n \"properties\": {\n \"sehir\": {\n\"type\": \"string\",\n \"description\": \"Şehir adı\"\n}\n},\n \"required\": [\"sehir\"]\n }\n}\n"
+            },
+            {
+                "from": "human",
+                "value": "Bingöl'de hava kaç derece?"
+            },
+            {
+                "from": "gpt",
+                "value": "<functioncall> {\"name\":\"hava_durumu_sorgula\", \"arguments\": '{\"sehir\":\"Bingöl\"}'}"
+            },
+            {
+                "from": "tool",
+                "value": "{\"sicaklik\": \"15°C\", \"durum\":\"Bulutlu\"}"
+            },
+            {
+                "from": "gpt",
+                "value": "Bingöl'de şu anda hava 15°C ve bulutlu."
+            }
+        ]
+    },
+    {
+        "chat": "USER: Bitlis'te hava durumu seyahat için uygun mu?\n\nASSISTANT: <functioncall> {\"name\": \"hava_durumu_sorgula\", \"arguments\": '{\"sehir\": \"Bitlis\"'}\n\nFUNCTION RESPONSE: {\"sicaklik\":\"12°C\", \"durum\": \"Sağanak Yağışlı\"}\n\nASSISTANT: Bitlis'te şu anda hava 12°C ve sağanak yağışlı.",
+        "system": "SYSTEM: Aşağıdaki fonksiyonlara erişimin var, gerektiğinde kullanabilirsin.\n{\n \"name\":\"hava_durumu_sorgula\",\n \"description\": \"Verilen şehir için güncel hava durumunu sorgular\",\n \"parameters\": {\n \"type\":\"object\",\n \"properties\": {\n \"sehir\": {\n\"type\": \"string\",\n \"description\": \"Şehir adı\"\n}\n},\n \"required\": [\"sehir\"]\n }\n}\n",
+        "__hfsplit__": "train",
+        "conversations": [
+            {
+                "from": "system",
+                "value": "Aşağıdaki fonksiyonlara erişimin var, gerektiğinde kullanabilirsin.\n{\n \"name\":\"hava_durumu_sorgula\",\n \"description\": \"Verilen şehir için güncel hava durumunu sorgular\",\n \"parameters\": {\n \"type\":\"object\",\n \"properties\": {\n \"sehir\": {\n\"type\": \"string\",\n \"description\": \"Şehir adı\"\n}\n},\n \"required\": [\"sehir\"]\n }\n}\n"
+            },
+            {
+                "from": "human",
+                "value": "Bitlis'te hava durumu seyahat için uygun mu?"
+            },
+            {
+                "from": "gpt",
+                "value": "<functioncall> {\"name\":\"hava_durumu_sorgula\", \"arguments\": '{\"sehir\":\"Bitlis\"}'}"
+            },
+            {
+                "from": "tool",
+                "value": "{\"sicaklik\": \"12°C\", \"durum\":\"Sağanak Yağışlı\"}"
+            },
+            {
+                "from": "gpt",
+                "value": "Bitlis'te şu anda hava 12°C ve sağanak yağışlı."
+            }
+        ]
+    },
+    {
+        "chat": "USER: Bolu'da kar var mı?\n\nASSISTANT: <functioncall> {\"name\": \"hava_durumu_sorgula\", \"arguments\": '{\"sehir\": \"Bolu\"'}\n\nFUNCTION RESPONSE: {\"sicaklik\":\"18°C\", \"durum\": \"Sisli\"}\n\nASSISTANT: Bolu'da şu anda hava 18°C ve sisli.",
+        "system": "SYSTEM: Aşağıdaki fonksiyonlara erişimin var, gerektiğinde kullanabilirsin.\n{\n \"name\":\"hava_durumu_sorgula\",\n \"description\": \"Verilen şehir için güncel hava durumunu sorgular\",\n \"parameters\": {\n \"type\":\"object\",\n \"properties\": {\n \"sehir\": {\n\"type\": \"string\",\n \"description\": \"Şehir adı\"\n}\n},\n \"required\": [\"sehir\"]\n }\n}\n",
+        "__hfsplit__": "train",
+        "conversations": [
+            {
+                "from": "system",
+                "value": "Aşağıdaki fonksiyonlara erişimin var, gerektiğinde kullanabilirsin.\n{\n \"name\":\"hava_durumu_sorgula\",\n \"description\": \"Verilen şehir için güncel hava durumunu sorgular\",\n \"parameters\": {\n \"type\":\"object\",\n \"properties\": {\n \"sehir\": {\n\"type\": \"string\",\n \"description\": \"Şehir adı\"\n}\n},\n \"required\": [\"sehir\"]\n }\n}\n"
+            },
+            {
+                "from": "human",
+                "value": "Bolu'da kar mı?"
+            },
+            {
+                "from": "gpt",
+                "value": "<functioncall> {\"name\":\"hava_durumu_sorgula\", \"arguments\": '{\"sehir\":\"Bolu\"}'}"
+            },
+            {
+                "from": "tool",
+                "value": "{\"sicaklik\": \"18°C\", \"durum\":\"Sisli\"}"
+            },
+            {
+                "from": "gpt",
+                "value": "Bolu'da şu anda hava 18°C ve sisli."
+            }
+        ]
+    },
+    {
+        "chat": "USER: Burdur'da hava açık mı?\n\nASSISTANT: <functioncall> {\"name\": \"hava_durumu_sorgula\", \"arguments\": '{\"sehir\": \"Burdur\"'}\n\nFUNCTION RESPONSE: {\"sicaklik\":\"18°C\", \"durum\": \"Gök Gürültülü ve Sağanak Yağışlı\"}\n\nASSISTANT: Burdur'da şu anda hava 18°C ve gök gürültülü ve sağanak yağışlı.",
+        "system": "SYSTEM: Aşağıdaki fonksiyonlara erişimin var, gerektiğinde kullanabilirsin.\n{\n \"name\":\"hava_durumu_sorgula\",\n \"description\": \"Verilen şehir için güncel hava durumunu sorgular\",\n \"parameters\": {\n \"type\":\"object\",\n \"properties\": {\n \"sehir\": {\n\"type\": \"string\",\n \"description\": \"Şehir adı\"\n}\n},\n \"required\": [\"sehir\"]\n }\n}\n",
+        "__hfsplit__": "train",
+        "conversations": [
+            {
+                "from": "system",
+                "value": "Aşağıdaki fonksiyonlara erişimin var, gerektiğinde kullanabilirsin.\n{\n \"name\":\"hava_durumu_sorgula\",\n \"description\": \"Verilen şehir için güncel hava durumunu sorgular\",\n \"parameters\": {\n \"type\":\"object\",\n \"properties\": {\n \"sehir\": {\n\"type\": \"string\",\n \"description\": \"Şehir adı\"\n}\n},\n \"required\": [\"sehir\"]\n }\n}\n"
+            },
+            {
+                "from": "human",
+                "value": "Burdur'da hava açık mı?"
+            },
+            {
+                "from": "gpt",
+                "value": "<functioncall> {\"name\":\"hava_durumu_sorgula\", \"arguments\": '{\"sehir\":\"Burdur\"}'}"
+            },
+            {
+                "from": "tool",
+                "value": "{\"sicaklik\": \"18°C\", \"durum\":\"Gök Gürültülü ve Sağanak Yağışlı\"}"
+            },
+            {
+                "from": "gpt",
+                "value": "Burdur'da hava açık mı?"
+            }
+        ]
+    },
+    {
+        "chat": "USER: Bursa kaç derece?\n\nASSISTANT: <functioncall> {\"name\": \"hava_durumu_sorgula\", \"arguments\": '{\"sehir\": \"Bursa\"'}\n\nFUNCTION RESPONSE: {\"sicaklik\":\"18°C\", \"durum\": \"Güneşli\"}\n\nASSISTANT: Bursa'da şu anda hava 18°C ve güneşli.",
+        "system": "SYSTEM: Aşağıdaki fonksiyonlara erişimin var, gerektiğinde kullanabilirsin.\n{\n \"name\":\"hava_durumu_sorgula\",\n \"description\": \"Verilen şehir için güncel hava durumunu sorgular\",\n \"parameters\": {\n \"type\":\"object\",\n \"properties\": {\n \"sehir\": {\n\"type\": \"string\",\n \"description\": \"Şehir adı\"\n}\n},\n \"required\": [\"sehir\"]\n }\n}\n",
+        "__hfsplit__": "train",
+        "conversations": [
+            {
+                "from": "system",
+                "value": "Aşağıdaki fonksiyonlara erişimin var, gerektiğinde kullanabilirsin.\n{\n \"name\":\"hava_durumu_sorgula\",\n \"description\": \"Verilen şehir için güncel hava durumunu sorgular\",\n \"parameters\": {\n \"type\":\"object\",\n \"properties\": {\n \"sehir\": {\n\"type\": \"string\",\n \"description\": \"Şehir adı\"\n}\n},\n \"required\": [\"sehir\"]\n }\n}\n"
+            },
+            {
+                "from": "human",
+                "value": "Bursa kaç derece?"
+            },
+            {
+                "from": "gpt",
+                "value": "<functioncall> {\"name\":\"hava_durumu_sorgula\", \"arguments\": '{\"sehir\":\"Bursa\"}'}"
+            },
+            {
+                "from": "tool",
+                "value": "{\"sicaklik\": \"18°C\", \"durum\":\"Güneşli\"}"
+            },
+            {
+                "from": "gpt",
+                "value": "Bursa'da şu anda hava 18°C ve güneşli."
+            }
+        ]
+    },
+    {
+        "chat": "USER: Çanakkale'de hava nasıl?\n\nASSISTANT: <functioncall> {\"name\": \"hava_durumu_sorgula\", \"arguments\": '{\"sehir\": \"Çanakkale\"'}\n\nFUNCTION RESPONSE: {\"sicaklik\":\"18°C\", \"durum\": \"Puslu\"}\n\nASSISTANT: Çanakkale'de şu anda hava 18°C ve puslu.",
+        "system": "SYSTEM: Aşağıdaki fonksiyonlara erişimin var, gerektiğinde kullanabilirsin.\n{\n \"name\":\"hava_durumu_sorgula\",\n \"description\": \"Verilen şehir için güncel hava durumunu sorgular\",\n \"parameters\": {\n \"type\":\"object\",\n \"properties\": {\n \"sehir\": {\n\"type\": \"string\",\n \"description\": \"Şehir adı\"\n}\n},\n \"required\": [\"sehir\"]\n }\n}\n",
+        "__hfsplit__": "train",
+        "conversations": [
+            {
+                "from": "system",
+                "value": "Aşağıdaki fonksiyonlara erişimin var, gerektiğinde kullanabilirsin.\n{\n \"name\":\"hava_durumu_sorgula\",\n \"description\": \"Verilen şehir için güncel hava durumunu sorgular\",\n \"parameters\": {\n \"type\":\"object\",\n \"properties\": {\n \"sehir\": {\n\"type\": \"string\",\n \"description\": \"Şehir adı\"\n}\n},\n \"required\": [\"sehir\"]\n }\n}\n"
+            },
+            {
+                "from": "human",
+                "value": "Çanakkale'de hava nasıl?"
+            },
+            {
+                "from": "gpt",
+                "value": "<functioncall> {\"name\":\"hava_durumu_sorgula\", \"arguments\": '{\"sehir\":\"Çanakkale\"}'}"
+            },
+            {
+                "from": "tool",
+                "value": "{\"sicaklik\": \"18°C\", \"durum\":\"Puslu\"}"
+            },
+            {
+                "from": "gpt",
+                "value": "Çanakkale'de şu anda hava 18°C ve puslu."
+            }
+        ]
+    },
+    {
+        "chat": "USER: İstanbul'da hava durumu nasıl?\n\nASSISTANT:<functioncall> {\"name\": \"hava_durumu_sorgula\", \"arguments\":'{\"sehir\": \"İstanbul\"}'}\n\nFUNCTION RESPONSE: {\"sicaklik\":\"18°C\", \"durum\": \"Güneşli\"}\n\nASSISTANT: İstanbul'da şu anda hava 18°C ve güneşli.\n",
+        "system": "SYSTEM: Aşağıdaki fonksiyonlara erişimin var, gerektiğinde kullanabilirsin.\n{\n \"name\":\"hava_durumu_sorgula\",\n \"description\": \"Verilen şehir için güncel hava durumunu sorgular\",\n \"parameters\": {\n \"type\":\"object\",\n \"properties\": {\n \"sehir\": {\n\"type\": \"string\",\n \"description\": \"Şehir adı\"\n}\n },\n \"required\": [\"sehir\"]\n }\n}\n",
+        "__hfsplit__": "train",
+        "conversations": [
+            {
+            "from": "system",
+            "value": "Aşağıdaki fonksiyonlara erişimin var, gerektiğinde kullanabilirsin.\n{\n \"name\":\"hava_durumu_sorgula\",\n \"description\": \"Verilen şehir için güncel hava durumunu sorgular\",\n \"parameters\": {\n \"type\":\"object\",\n \"properties\": {\n \"sehir\": {\n\"type\": \"string\",\n \"description\": \"Şehir adı\"\n}\n },\n \"required\": [\"sehir\"]\n }\n}\n"
+            },
+            {
+            "from": "human",
+            "value": "İstanbul'da hava durumu nasıl?"
+            },
+            {
+            "from": "gpt",
+            "value": "<functioncall> {\"name\":\"hava_durumu_sorgula\", \"arguments\": '{\"sehir\":\"İstanbul\"}'}"
+            },
+            {
+            "from": "tool",
+            "value": "{\"sicaklik\": \"18°C\", \"durum\":\"Güneşli\"}"
+            },
+            {
+            "from": "gpt",
+            "value": "İstanbul'da şu anda hava 18°C ve güneşli."
+            }
+        ]
+    },
+    {
+        "chat": "USER: Ankara'da şu an hava nasıl?\n\nASSISTANT:<functioncall> {\"name\": \"hava_durumu_sorgula\", \"arguments\":'{\"sehir\": \"Ankara\"}'}\n\nFUNCTION RESPONSE: {\"sicaklik\":\"12°C\", \"durum\": \"Bulutlu\"}\n\nASSISTANT: Ankara'da şu anda hava 12°C ve bulutlu.\n",
+        "system": "SYSTEM: Aşağıdaki fonksiyonlara erişimin var, gerektiğinde kullanabilirsin.\n{\n \"name\":\"hava_durumu_sorgula\",\n \"description\": \"Verilen şehir için güncel hava durumunu sorgular\",\n \"parameters\": {\n \"type\": \"object\",\n \"properties\": {\n \"sehir\": {\n \"type\": \"string\",\n \"description\": \"Şehir adı\"\n}\n },\n \"required\": [\"sehir\"]\n }\n}\n",
+        "__hfsplit__": "train",
+        "conversations": [
+            {
+            "from": "system",
+            "value": "Aşağıdaki fonksiyonlara erişimin var, gerektiğinde kullanabilirsin.\n{\n \"name\": \"hava_durumu_sorgula\",\n \"description\": \"Verilen şehir için güncel hava durumunu sorgular\",\n \"parameters\": {\n \"type\": \"object\",\n \"properties\": {\n \"sehir\": {\n \"type\": \"string\",\n \"description\": \"Şehir adı\"\n}\n },\n \"required\": [\"sehir\"]\n }\n}\n"
+            },
+            {
+            "from": "human",
+            "value": "Ankara'da şu an hava nasıl?"
+            },
+            {
+            "from": "gpt",
+            "value": "<functioncall> {\"name\":\"hava_durumu_sorgula\", \"arguments\": '{\"sehir\": \"Ankara\"}'}"
+            },
+            {
+            "from": "tool",
+            "value": "{\"sicaklik\": \"12°C\", \"durum\":\"Bulutlu\"}"
+            },
+            {
+            "from": "gpt",
+            "value": "Ankara'da şu anda hava 12°C ve bulutlu."
+            }
+        ]
+    },
+    {
+        "chat": "USER: İzmir'de hava durumu nasıl?\n\nASSISTANT:<functioncall> {\"name\": \"hava_durumu_sorgula\", \"arguments\":'{\"sehir\": \"İzmir\"}'}\n\nFUNCTION RESPONSE: {\"sicaklik\":\"22°C\", \"durum\": \"Yağmurlu\"}\n\nASSISTANT: İzmir'de şu anda hava 22°C ve yağmurlu.\n",
+        "system": "SYSTEM: Aşağıdaki fonksiyonlara erişimin var, gerektiğinde kullanabilirsin.\n{\n \"name\":\"hava_durumu_sorgula\",\n \"description\": \"Verilen şehir için güncel hava durumunu sorgular\",\n \"parameters\": {\n \"type\":\"object\",\n \"properties\": {\n \"sehir\": {\n\"type\": \"string\",\n \"description\": \"Şehir adı\"\n}\n },\n \"required\": [\"sehir\"]\n }\n}\n",
+        "__hfsplit__": "train",
+        "conversations": [
+            {
+            "from": "system",
+            "value": "Aşağıdaki fonksiyonlara erişimin var,gerektiğinde kullanabilirsin.\n{\n \"name\":\"hava_durumu_sorgula\",\n \"description\": \"Verilen şehir için güncel hava durumunu sorgular\",\n \"parameters\": {\n \"type\":\"object\",\n \"properties\": {\n \"sehir\": {\n\"type\": \"string\",\n \"description\": \"Şehir adı\"\n}\n },\n \"required\": [\"sehir\"]\n }\n}\n"
+            },
+            {
+            "from": "human",
+            "value": "İzmir'de hava durumu nasıl?"
+            },
+            {
+            "from": "gpt",
+            "value": "<functioncall> {\"name\":\"hava_durumu_sorgula\", \"arguments\": '{\"sehir\": \"İzmir\"}'}"
+            },
+            {
+            "from": "tool",
+            "value": "{\"sicaklik\": \"22°C\", \"durum\":\"Yağmurlu\"}"
+            },
+            {
+            "from": "gpt",
+            "value": "İzmir'de şu anda hava 22°C ve yağmurlu."
+            }
+        ]
+    }
+]
