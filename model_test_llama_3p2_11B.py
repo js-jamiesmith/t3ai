@@ -1,4 +1,4 @@
-# tested with Python 3.12
+# tested with Python 3.12.7
 
 import requests
 import torch
