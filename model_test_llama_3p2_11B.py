@@ -12,7 +12,7 @@ model = MllamaForConditionalGeneration.from_pretrained(
 )
 processor = AutoProcessor.from_pretrained(model_id)
 
-url = input("image url:") # "https://huggingface.co/datasets/huggingface/documentation-images/resolve/0052a70beed5bf71b92610a43a52df6d286cd5f3/diffusers/rabbit.jpg"
+url = input("IMAGE URL:") # "https://huggingface.co/datasets/huggingface/documentation-images/resolve/0052a70beed5bf71b92610a43a52df6d286cd5f3/diffusers/rabbit.jpg"
 image = Image.open(requests.get(url, stream=True).raw)
 
 messages = [
