@@ -1,3 +1,5 @@
+# tested with Python 3.12
+
 import requests
 import torch
 from PIL import Image
