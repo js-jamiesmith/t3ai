@@ -2,6 +2,7 @@ import requests
 import torch
 from PIL import Image
 from transformers import MllamaForConditionalGeneration, AutoProcessor
+import time
 
 model_id = "meta-llama/Llama-3.2-11B-Vision-Instruct"
 
@@ -14,7 +15,7 @@ processor = AutoProcessor.from_pretrained(model_id)
 
 url = input("IMAGE URL:") # "https://huggingface.co/datasets/huggingface/documentation-images/resolve/0052a70beed5bf71b92610a43a52df6d286cd5f3/diffusers/rabbit.jpg"
 image = Image.open(requests.get(url, stream=True).raw)
-
+start_time = time.time()
 messages = [
     {"role": "user", "content": [
         {"type": "image"},
@@ -31,3 +32,4 @@ inputs = processor(
 
 output = model.generate(**inputs, max_new_tokens=30)
 print(processor.decode(output[0]))
+print("--- %s seconds ---" % (time.time() - start_time))
