@@ -15,13 +15,13 @@ model = MllamaForConditionalGeneration.from_pretrained(
 )
 processor = AutoProcessor.from_pretrained(model_id)
 
-url = input("IMAGE URL:") # "https://huggingface.co/datasets/huggingface/documentation-images/resolve/0052a70beed5bf71b92610a43a52df6d286cd5f3/diffusers/rabbit.jpg"
+url = input("IMAGE URL:")
 image = Image.open(requests.get(url, stream=True).raw)
 start_time = time.time()
 messages = [
     {"role": "user", "content": [
         {"type": "image"},
-        {"type": "text", "text": "If I had to write a haiku for this one, it would be: "}
+        {"type": "text", "text": "Görseldeki faturada bulunan elektrik faturası miktarı ne kadardır?"}
     ]}
 ]
 input_text = processor.apply_chat_template(messages, add_generation_prompt=True)
